@@ -32,7 +32,7 @@
     }
 }
 
-<PageTitle Title="Minesweeper" />
+<BlazorGames.Shared.PageTitle Title="Minesweeper" />
 
 <div class="minesweeper-game minesweeper-medium">
     <div class="minesweeper-board" @oncontextmenu:preventDefault onmousedown="@(board.Status != GameStatus.Completed ? "faceOooh(event);" : "")" onmouseup="faceSmile();">
